@@ -1,0 +1,326 @@
+/*Configurações da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+
+/* Configurações da cores */
+
+:root{
+   --cor1:#c9b065;
+   --cor2:#0a1130;
+   --cor3:#7d6a32;
+   --cor4:#ffffff;
+   --cor5:#667ecd;
+   --cor6:#a25b5b;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color:#ccc;     /*/* core de fundo para o orpo principal*/
+}
+
+/* primeira parte /*/
+.primeira{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 100%;
+    height: 50px;
+}
+
+.mail{
+    margin-top: 5px;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.mail {
+    font-size: 30px;
+}
+
+
+
+.menu{
+    width: 50%;
+    flex: 1;
+    text-align: end;
+}
+
+.menu  ul button{
+   margin-right: 5px;
+   height: 30px;
+   width: 100px;
+   border-radius:15px;
+   border: 1px solid gray;
+   background-color: rgb(87, 184, 241);
+   color: white;
+}
+
+
+.menu ul li{
+    margin-top: 10px;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+}
+
+.menu ul li a:hover{
+    color: #616161;
+}
+
+.header-top{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    height: 50px;
+    background-image: linear-gradient(#c5fa7f, #4c7e0b);
+    border:1px solid #999 ;
+    border-radius: 7px;
+   
+}
+
+.segunda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 97vh;
+    background-color: #675AFE;
+}
+
+.wrapper{
+    width:400px;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select , button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+}
+
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999;  
+}
+
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track{
+   background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+ }
+
+
+.select-box img{
+    max-width: 25px;
+}
+
+.drop-list .icon{
+    cursor: pointer;
+}
+
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+form button{
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #675AFE;
+}
+
+
+/******* Formatação do Rodapé**************/
+   /* Terceira Parte */
+   .terceira{
+    height: 500px;
+    width: 100%;
+    background-color:#ddd ;
+  }
+
+.terceira .divisa{
+    height:45%;
+    background-color: rgb(38, 38, 99);
+}
+
+.divisa p{
+    
+    color: white;
+    justify-content: center;
+    text-align: center;  
+}
+
+.divisa p{
+    margin-top: 5px;
+}
+
+.divisa ul {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.divisa img{
+    width: 38px;
+    aspect-ratio: auto 35 / 35;
+    height: 38px;
+}
+.divisa a{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 38, 99);
+    color: var(--cor4);
+    padding-top: 2%;
+    text-align: center;
+    height:50%;
+ }
+ 
+ .rodape a{
+     font-size: 0.8rem;
+     color: var(--cor4);
+ }
+ 
+ .rodape i{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #667ecd;
+ }
+
+ .rodape ul li{
+    list-style: none;
+ }
+
+
+ .pessoal{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 38, 99);
+ }
+
+ .pessoal ul{
+    display: block;
+    text-align: center;
+ }
+
+ .pessoal button{
+    width: 150px;
+    height: 50px;
+    background-color: #667ecd;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 100px;
+ }
+
+ .pessoal ul a{
+    text-decoration: none;
+    margin-right: 80px;
+    color: rgb(22, 129, 206);
+ }
+
+ .pessoal p{
+    margin-top: 5px;
+    text-align: center;
+    color: #999;
+ }
+
+ 
+  /* Adicione regras de mídia para tornar o layout mais responsivo */
+@media screen and (max-width: 768px) {
+    .mail,
+    .menu,
+    .header-top,
+    .wrapper,
+    .terceira,
+    footer,
+    .pessoal {
+        width: 100%;
+    }
+
+    .menu ul li {
+        display: block;
+        text-align: center;
+    }
+}
